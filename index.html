@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آية حنفي محمود | Frontend Developer</title>
+    <meta name="description" content="آية حنفي محمود، مطورة واجهات أمامية وخريجة نظم معلومات إدارية. اطلعي على مشاريعي ومهاراتي.">
+    <meta property="og:title" content="آية حنفي محمود | Frontend Developer">
+    <meta property="og:description" content="بورتفوليو مطورة واجهات أمامية: مشاريع ويب ومهارات HTML وCSS وJavaScript.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩‍💻</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Aya Hanafy</a>
+
+            <button class="nav__toggle" id="nav-toggle" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">الرئيسية</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">نبذة</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">المهارات</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">المشاريع</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">تواصل</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- الواجهة الرئيسية -->
+        <section class="home section" id="home">
+            <div class="home__container container">
+                <img src="img/profile.png" alt="آية حنفي" class="home__img">
+
+                <div class="home__data">
+                    <span class="home__subtitle">مرحباً، أنا</span>
+                    <h1 class="home__title">آية حنفي محمود</h1>
+                    <h2 class="home__education">Frontend Developer &amp; MIS Graduate</h2>
+                    <p class="home__description">خريجة بكالوريوس تجارة قسم نظم معلومات إدارية (دفعة 2026) من محافظة المنيا، ومختصة في تطوير الواجهات الأمامية وتصميم تجارب مستخدم مميزة.</p>
+                    <div class="home__buttons">
+                        <a href="#projects" class="button">شاهدي مشاريعي</a>
+                        <a href="#contact" class="button button--outline">تواصل معي</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- نبذة -->
+        <section class="about section" id="about">
+            <h2 class="section__title">نبذة عني</h2>
+            <span class="section__subtitle">تعرف عليّ أكثر</span>
+
+            <div class="about__container container">
+                <div class="about__data">
+                    <p class="about__description">
+                        أنا خريجة بكالوريوس تجارة قسم نظم معلومات إدارية (MIS) لعام 2026 من محافظة المنيا. أمتلك شغفاً كبيراً بتطوير الويب وبرمجة الواجهات الأمامية (Frontend)، وأسعى دائماً لربط علم نظم المعلومات بتصميم وتطوير مواقع إلكترونية تفاعلية واحترافية تلبي احتياجات المستخدمين بأعلى كفاءة.
+                    </p>
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">2026</span>
+                            <span class="about__info-name">سنة <br> التخرج</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">المنيا</span>
+                            <span class="about__info-name">مقر <br> الإقامة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- المهارات -->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">المهارات التقنية</h2>
+            <span class="section__subtitle">ما تخصصت فيه وأتقنه</span>
+
+            <div class="skills__container container">
+                <div class="skills__grid">
+                    <div class="skills__box"><h3>HTML5 / CSS3</h3><p>بناء وتنسيق صفحات ويب متجاوبة مع كل الشاشات.</p></div>
+                    <div class="skills__box"><h3>JavaScript</h3><p>إضافة التفاعل للصفحات والتعامل مع عناصر الصفحة.</p></div>
+                    <div class="skills__box"><h3>Responsive Design</h3><p>تصميم واجهات تعمل بشكل سليم على الموبايل والكمبيوتر.</p></div>
+                    <div class="skills__box"><h3>Git &amp; GitHub</h3><p>رفع المشاريع ونشرها عبر GitHub Pages.</p></div>
+                    <div class="skills__box"><h3>Java</h3><p>أساسيات البرمجة وتطوير البرمجيات المنظمة.</p></div>
+                    <div class="skills__box"><h3>Management Information Systems</h3><p>تحليل وتصميم نظم المعلومات الإدارية.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- المشاريع -->
+        <section class="projects section" id="projects">
+            <h2 class="section__title">مشاريعي</h2>
+            <span class="section__subtitle">أعمال قمت بتطويرها</span>
+
+            <div class="projects__container container">
+                <article class="projects__card">
+                    <h3>Healthy Guide</h3>
+                    <p>موقع دليل صحي متعدد الصفحات يعرض التغذية والتمارين والنصائح، بتصميم متجاوب مع الموبايل.</p>
+                    <div class="projects__tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+                    <div class="projects__links">
+                        <a href="https://ayaayahanfy-sys.github.io/Healthy-Guide/" target="_blank" rel="noopener" class="button">Live Demo</a>
+                        <a href="https://github.com/ayaayahanfy-sys/Healthy-Guide" target="_blank" rel="noopener" class="button button--outline">GitHub</a>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <h3>نظام تشخيصي</h3>
+                    <p>واجهة نظام تشخيص صحي (نموذج أولي) بتسجيل دخول وإنشاء حساب ولوحة تحكم وصفحة تشخيص ونصائح طبية.</p>
+                    <div class="projects__tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+                    <div class="projects__links">
+                        <a href="https://ayaayahanfy-sys.github.io/diagnosis-system/" target="_blank" rel="noopener" class="button">Live Demo</a>
+                        <a href="https://github.com/ayaayahanfy-sys/diagnosis-system" target="_blank" rel="noopener" class="button button--outline">GitHub</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- التواصل -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">تواصل معي</h2>
+            <span class="section__subtitle">دعنا نعمل معاً</span>
+            <div class="contact__container container">
+                <p class="contact__text">يسعدني التواصل معكِ أو زيارة حسابي على المنصات البرمجية.</p>
+
+                <div class="contact__buttons">
+                    <!-- غيّري الإيميل لإيميلك الحقيقي -->
+                    <a href="mailto:aya@example.com" class="button">أرسل بريد إلكتروني</a>
+                    <a href="https://github.com/ayaayahanfy-sys" target="_blank" rel="noopener" class="button button--outline">GitHub Profile</a>
+                    <!-- فعّلي السطرين دول بعد ما تحطي لينك LinkedIn وملف الـ CV:
+                    <a href="https://www.linkedin.com/in/your-name" target="_blank" rel="noopener" class="button button--outline">LinkedIn</a>
+                    <a href="cv.pdf" download class="button button--outline">تحميل السيرة الذاتية</a>
+                    -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 آية حنفي محمود</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.9"></script>
+    <script src="main.js"></script>
+</body>
+</html>

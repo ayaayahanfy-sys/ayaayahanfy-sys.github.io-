@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 4.5rem;
+}
+
+body {
+    font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b0f19;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #38bdf8;
+    outline-offset: 3px;
+}
+
+.container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* ===== الهيدر ===== */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0b0f19;
+    z-index: 100;
+    border-bottom: 1px solid #1f293d;
+}
+
+.nav {
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    color: #38bdf8;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.nav__list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav__link:hover {
+    color: #38bdf8;
+}
+
+.nav__toggle {
+    display: none;
+    background: none;
+    border: 1px solid #1f293d;
+    color: #ffffff;
+    font-size: 1.4rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.main {
+    margin-top: 4.5rem;
+}
+
+/* ===== الأقسام ===== */
+.section {
+    padding: 4.5rem 0 2rem;
+}
+
+.section__title {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.section__subtitle {
+    display: block;
+    font-size: 0.9rem;
+    color: #94a3b8;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* ===== الرئيسية ===== */
+.home {
+    padding: 4rem 0 2rem;
+}
+
+.home__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.home__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #38bdf8;
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
+    margin-bottom: 1rem;
+}
+
+.home__subtitle {
+    font-size: 1rem;
+    color: #94a3b8;
+}
+
+.home__title {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin: 0.5rem 0;
+}
+
+.home__education {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #38bdf8;
+    margin-bottom: 1rem;
+}
+
+.home__description {
+    color: #94a3b8;
+    margin: 0 auto 2rem;
+    max-width: 600px;
+}
+
+.home__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* ===== الأزرار ===== */
+.button {
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #0b0f19;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #38bdf8;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #0ea5e9;
+    transform: translateY(-3px);
+}
+
+.button--outline {
+    background-color: transparent;
+    color: #38bdf8;
+}
+
+.button--outline:hover {
+    background-color: #1f293d;
+}
+
+/* ===== نبذة ===== */
+.about__container,
+.skills__container {
+    display: flex;
+    justify-content: center;
+}
+
+.about__data {
+    max-width: 700px;
+    text-align: center;
+}
+
+.about__description {
+    color: #94a3b8;
+    margin-bottom: 2.5rem;
+}
+
+.about__info {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    text-align: center;
+}
+
+.about__info-title {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+.about__info-name {
+    font-size: 0.875rem;
+    color: #94a3b8;
+}
+
+/* ===== المهارات ===== */
+.skills__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 900px;
+}
+
+.skills__box {
+    background-color: #111827;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid #1f293d;
+    text-align: center;
+}
+
+.skills__box h3 {
+    color: #38bdf8;
+    margin-bottom: 0.5rem;
+}
+
+.skills__box p {
+    color: #94a3b8;
+    font-size: 0.875rem;
+}
+
+/* ===== المشاريع ===== */
+.projects__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.projects__card {
+    background-color: #111827;
+    border: 1px solid #1f293d;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.projects__card h3 {
+    color: #38bdf8;
+    margin-bottom: 0.5rem;
+}
+
+.projects__card p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.projects__tags {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+}
+
+.projects__tags span {
+    background: #1f293d;
+    color: #38bdf8;
+    padding: 0.2rem 0.7rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+}
+
+.projects__links {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+/* ===== التواصل ===== */
+.contact__container {
+    text-align: center;
+}
+
+.contact__text {
+    color: #94a3b8;
+    margin-bottom: 1.5rem;
+}
+
+.contact__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* ===== الفوتر ===== */
+.footer {
+    margin-top: 4rem;
+    padding: 1.5rem;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.85rem;
+    border-top: 1px solid #1f293d;
+}
+
+/* ===== الموبايل ===== */
+@media (max-width: 768px) {
+    .nav__toggle {
+        display: block;
+    }
+
+    .nav__menu {
+        display: none;
+        position: absolute;
+        top: 4.5rem;
+        left: 0;
+        width: 100%;
+        background-color: #0b0f19;
+        border-bottom: 1px solid #1f293d;
+        padding: 1rem 1.5rem;
+    }
+
+    .nav__menu.show {
+        display: block;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .home__title {
+        font-size: 1.8rem;
+    }
+}
+
+/* احترام من بيقفلوا الحركة */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    * {
+        transition: none !important;
+    }
+}
